@@ -939,3 +939,12 @@ body {
     display: block;
   }
 }
+.hero-buttons{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+
+.hero-buttons .btn{
+  white-space: nowrap;
+}
