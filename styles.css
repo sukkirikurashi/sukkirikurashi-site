@@ -1088,3 +1088,21 @@ display:block;
     display: block !important;
   }
 }
+@media (max-width: 768px) {
+  .activity-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  .activity-item {
+    width: 100% !important;
+  }
+
+  .activity-item img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+  }
+}
