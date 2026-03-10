@@ -969,3 +969,10 @@ margin-top:40px !important;
 .hero-inner{
 padding-top:40px !important;
 }
+@media (max-width:768px){
+
+.hero-inner img.hero{
+object-position:center top;
+}
+
+}
