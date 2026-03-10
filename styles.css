@@ -921,3 +921,6 @@ body {
     padding-top: 32px;
   }
 }
+.hero-text{
+  max-width: 520px;
+}
