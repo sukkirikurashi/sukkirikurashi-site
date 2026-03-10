@@ -954,3 +954,15 @@ display:block;
 }
 
 }
+@media (max-width:768px){
+
+.hero-content .title{
+font-size:42px !important;
+line-height:1.1;
+}
+
+.hero-inner img.hero{
+margin-top:40px !important;
+}
+
+}
