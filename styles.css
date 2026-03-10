@@ -847,10 +847,57 @@ body {
 .hero {
   grid-template-columns: 1fr;
 }
+/* スマホ ヒーロー修正 */
+@media (max-width: 768px){
 
+.hero-title{
+writing-mode: horizontal-tb !important;
+font-size: 40px;
+}
+
+.hero{
+display:block;
+}
+
+}
 .hero-title {
   writing-mode: horizontal-tb;
   font-size: 36px;
 }
 
+}
+/* スマホのヒーローを強制的に横組みにする */
+@media (max-width: 768px) {
+  .hero,
+  .hero-inner,
+  .hero-copy,
+  .hero-text,
+  .hero-content {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .hero h1,
+  .hero h2,
+  .hero h3,
+  .hero-name,
+  .hero-title {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    width: 100% !important;
+    max-width: none !important;
+    display: block !important;
+    font-size: 40px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero p,
+  .hero-badges,
+  .hero-buttons {
+    width: 100% !important;
+    max-width: none !important;
+  }
 }
