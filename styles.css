@@ -948,3 +948,9 @@ body {
 .hero-buttons .btn{
   padding: 14px 22px;
 }
+
+@media (min-width: 1024px){
+  .hero-buttons{
+    min-width: 420px;
+  }
+}
