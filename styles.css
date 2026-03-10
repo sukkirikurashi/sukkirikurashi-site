@@ -1109,3 +1109,6 @@ display:block;
     border-radius: 12px !important;
   }
 }
+.activity-grid > * {
+  width: 100% !important;
+}
