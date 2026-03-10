@@ -194,9 +194,6 @@ color: inherit;
 padding: 70px 0;
 }
 
-.hero-inner {
-	text-align: left;
-}
 
 .tagline {
 	color: var(--muted);
