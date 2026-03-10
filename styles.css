@@ -340,7 +340,17 @@ padding: 70px 0;
   margin-top: 24px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
+.media-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 14px;
+}
 
+.media-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 /* プロフィール */
 .profile-photo {
   width: 120px;
