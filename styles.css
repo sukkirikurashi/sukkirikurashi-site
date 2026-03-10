@@ -977,3 +977,23 @@ display:block;
   }
 
 }
+@media (max-width: 768px) {
+  .media-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .media-list li {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .media-list img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+}
