@@ -903,7 +903,8 @@ body {
   }
 
   .hero-photo {
-    width: min(72vw, 300px);
+    width: min(70vw, 280px);
+    margin-bottom: 16px;
   }
 
   .hero-content .title {
