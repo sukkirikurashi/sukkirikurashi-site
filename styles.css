@@ -873,109 +873,33 @@ body {
   }
 }
 /* スマホヒーロー調整 */
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 72px;
+}
+
+.hero-photo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
-
-.hero {
-  grid-template-columns: 1fr;
-}
-/* スマホ ヒーロー修正 */
-@media (max-width: 768px){
-
-.hero-title{
-writing-mode: horizontal-tb !important;
-font-size: 40px;
-}
-
-.hero{
-display:block;
-}
-
-}
-.hero-title {
-  writing-mode: horizontal-tb;
-  font-size: 36px;
-}
-
-}
-@media (max-width: 768px) {
-  section.hero {
-    padding-top: 24px;
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
-
-  img.hero {
+  .hero-photo {
+    width: 300px;
+    max-width: 80vw;
+    height: auto;
     display: block;
-    width: min(82vw, 320px) !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    object-fit: contain !important;
-  }
-
-  .hero-content {
-    width: 100% !important;
-    text-align: left !important;
   }
 
   .hero-content .title {
-    font-size: 56px !important;
-    line-height: 1.05 !important;
-    margin: 0 0 12px !important;
+    font-size: 42px;
+    line-height: 1.1;
   }
-
-  .hero-content .sub-title {
-    font-size: 18px !important;
-    line-height: 1.6 !important;
-  }
-
-  .hero-content .lead {
-    font-size: 16px !important;
-    line-height: 1.8 !important;
-  }
-
-  .achievement {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 8px !important;
-  }
-
-  .cta-row {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-  }
-
-  .cta-row .btn {
-    width: 100% !important;
-    text-align: center !important;
-  }
-}
-@media (max-width: 768px) {
-  img.hero {
-    margin-top: 32px !important;
-  }
-}
-@media (max-width: 768px){
-
-.hero-content .title{
-  font-size: 42px;
-  line-height: 1.1;
-}
-
-}
-@media (max-width:768px){
-
-.hero-content .title{
-font-size:42px !important;
-line-height:1.1;
-}
-
-}
-@media (max-width:768px){
-
-.hero-inner{
-  flex-direction:column;
-  align-items:center;
-  gap:24px;
-}
-
 }
