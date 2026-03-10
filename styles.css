@@ -918,4 +918,14 @@ display:block;
     max-width: none !important;
 }
 }
-  
+  .media-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 14px;
+}
+
+.media-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
