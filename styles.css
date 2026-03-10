@@ -886,19 +886,16 @@ body {
 
 @media (max-width: 768px) {
   .hero-photo {
-    width: min(92vw, 380px);
+    width: min(80vw, 320px);
   }
 }
 
-  .hero-photo {
-    width: 300px;
-    max-width: 80vw;
-    height: auto;
-    display: block;
-  }
+.hero-photo {
+  width: min(80vw, 320px);
+  margin: 0 auto;
+}
 
   .hero-content .title {
     font-size: 42px;
     line-height: 1.1;
   }
-}
