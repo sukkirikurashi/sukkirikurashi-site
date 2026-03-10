@@ -1068,3 +1068,23 @@ display:block;
   }
 
 }
+/* メディア写真だけ別調整 */
+@media (max-width: 768px) {
+  #media-tv .activity-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  #media-tv .activity-item {
+    min-width: 0 !important;
+  }
+
+  #media-tv .activity-item img {
+    width: 100% !important;
+    height: 96px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    display: block !important;
+  }
+}
