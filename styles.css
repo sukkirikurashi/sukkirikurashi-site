@@ -1097,20 +1097,15 @@ display:block;
 
   .activity-item {
     width: 100% !important;
+    min-width: 0 !important;
   }
 
   .activity-item img {
     display: block !important;
     width: 100% !important;
     height: auto !important;
+    aspect-ratio: 3 / 4 !important;
+    object-fit: cover !important;
     border-radius: 12px !important;
   }
-}
-.activity-item img {
-  display: block !important;
-  width: 100% !important;
-  height: auto !important;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 12px !important;
 }
