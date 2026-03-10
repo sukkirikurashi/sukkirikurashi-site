@@ -927,3 +927,6 @@ body {
     max-width: 640px;
   }
 }
+.hero-text p {
+  text-wrap: pretty;
+}
