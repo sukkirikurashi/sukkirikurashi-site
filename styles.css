@@ -930,3 +930,12 @@ body {
 .hero-text p {
   text-wrap: pretty;
 }
+.pc-break {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .pc-break {
+    display: block;
+  }
+}
