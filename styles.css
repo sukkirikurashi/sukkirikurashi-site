@@ -33,27 +33,6 @@ section {
 html {
   scroll-behavior: smooth;
 }
-.hero-photo {
-  width: 300px;
-  margin-bottom: 20px;
-}
-.hero-inner {
-  display: flex;
-  align-items: flex-start;
-  gap: 72px;
-}
-@media (max-width: 768px) {
-
-.hero-inner {
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-photo{
-  margin-top:40px;
-}
-
-}
 
 .title {
   font-size: 44px;
@@ -237,6 +216,34 @@ padding: 70px 0;
 	border-color: #e6dbcc;
 	color: #3b2f1a;
 }
+
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 72px;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hero-inner img.hero {
+    width: 300px;
+    max-width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hero-content .title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+}
+
 /* ヒーロー実績バッジ */
 .hero-badges{
   display:flex;
