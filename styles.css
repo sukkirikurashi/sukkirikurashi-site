@@ -879,23 +879,21 @@ body {
   gap: 72px;
 }
 
-.hero-photo {
-  width: 300px;
-  margin-bottom: 20px;
+.hero-content .title {
+  font-size: 2.6rem;
+  line-height: 1.1;
 }
 
 @media (max-width: 768px) {
-  .hero-photo {
-    width: min(80vw, 320px);
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
-}
 
-.hero-photo {
-  width: min(80vw, 320px);
-  margin: 0 auto;
-}
 
   .hero-content .title {
     font-size: 42px;
     line-height: 1.1;
   }
+}
