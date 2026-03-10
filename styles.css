@@ -955,3 +955,25 @@ display:block;
     gap: 12px !important;
   }
 }
+/* メディア画像サイズ調整 */
+
+.media-list img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+
+  .media-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .media-list img {
+    width: 100%;
+    height: auto;
+  }
+
+}
