@@ -1,0 +1,791 @@
+html {
+  scroll-behavior: smooth;
+}
+/* 基本カラー */
+:root {
+	--bg: #ffffff;
+	--fg: #1f1f1f;
+	--muted: #6b6b6b;
+	--beige: #f2e6d7;
+	--beige-dark: #e6d4ba;
+	--accent: #d1b49a;
+	/* ベージュ系アクセント */
+	--card: #ffffff;
+	--shadow: 0 6px 20px rgba(0, 0, 0, .05);
+}
+header .wrap{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+* {
+  box-sizing: border-box;
+}
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero-photo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}.hero {
+  padding: 72px 0 56px;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 700;
+
+}
+.subtitle {
+  font-size: 18px;
+  color: var(--muted);
+  margin: 10px 0 18px;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	color: var(--fg);
+	font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Arial;
+	line-height: 1.75;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height:1.1;
+}
+
+.brand-sub {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 2px;
+  letter-spacing: 0.05em;
+}
+nav a[href="#request"] {
+  border: 1px solid #e6dbcc;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+nav a[href="#request"]:hover {
+  background: #f3e7d9;
+}
+/* 目次的なスキップリンク */
+.skip-link {
+	position: absolute;
+	left: -9999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.skip-link:focus {
+	left: 12px;
+	top: 12px;
+	width: auto;
+	height: auto;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #ddd;
+s}
+
+/* ヘッダー */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+body{
+  padding-top: 90px;
+}
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-decoration: none;
+color: inherit;
+}
+
+.global-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.global-nav a {
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.global-nav a:hover {
+  text-decoration: underline;
+}
+/* セクション共通 */
+.section {
+	padding: 64px 0;
+	border-bottom: 1px solid #f5f0e9;
+	background: #fff;
+}
+
+.section-title {
+	font-size: 1.25rem;
+	color: #333;
+	margin-bottom: 16px;
+	letter-spacing: .5px;
+}
+
+.lead {
+	font-size: 1.05rem;
+	color: var(--fg);
+	margin: 8px 0 16px;
+}
+
+.muted {
+	color: var(--muted);
+}
+
+/* ヒーロー */
+.hero {
+	background: #fff;
+padding: 70px 0;
+}
+
+.hero-inner {
+	text-align: left;
+}
+
+.tagline {
+	color: var(--muted);
+	font-size: 0.95rem;
+	margin: 6px 0;
+}
+
+.title {
+	font-size: 2.6rem;
+	margin: 6px 0 6px;
+	letter-spacing: .5px;
+}
+
+
+
+.lead {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 20px;
+	border-radius: 999px;
+	border: 1px solid #e5d6c4;
+	background: #fff;
+	color: #3b2f1a;
+	text-decoration: none;
+	font-weight: 600;
+	transition: background .2s, color .2s, transform .2s;
+}
+
+.btn:hover {
+	background: #f3e7d9;
+	transform: translateY(-1px);
+}
+
+.btn-ghost {
+	background: #fff;
+	border-color: #e6dbcc;
+	color: #3b2f1a;
+}
+/* ヒーロー実績バッジ */
+.hero-badges{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:16px 0 12px;
+}
+
+.hero-badge{
+  background:#fff;
+  border:1px solid #e9e4de;
+  border-radius:999px;
+  padding:8px 14px;
+  font-size:0.9rem;
+  transition:all .2s ease;
+  cursor:pointer;
+}
+
+.hero-badge:hover{
+  background:#f3ece6;
+  transform:translateY(-2px);
+}
+.achievements a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.achievements a span {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.achievements a span:hover {
+  background: #f3ece6;
+  transform: translateY(-2px);
+}
+
+/* グリッドとカード */
+.grid {
+	display: grid;
+	gap: 20px;
+}
+
+.two-col {
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 860px) {
+	.two-col {
+		grid-template-columns: 1fr;
+	}
+}
+
+.section .service-item {
+	padding: 14px;
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 12px;
+	box-shadow: var(--shadow);
+}
+
+.section .service-item h4 {
+	margin: 0 0 6px;
+	font-size: 1.05rem;
+}
+
+.achievements-list,
+.media-list,
+.badge-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.achievements-list li,
+.media-list li {
+	padding: 6px 0;
+	border-bottom: 1px dashed #eee;
+}
+
+.badge-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 8px;
+	padding: 0;
+}
+
+.badge-list li {
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 8px 10px;
+	border-radius: 8px;
+	font-size: .95rem;
+}
+.media-card {
+  background: #fff;
+  border: 1px solid #e9e4de;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+.media-card {
+  background: #fff;
+  border: 1px solid #e6ddd3;
+  border-radius: 16px;
+  padding: 28px;
+  margin-top: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* プロフィール */
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+   object-position: center top;
+  border-radius: 50%;
+   display:block;
+  margin:12px 0 16px 0;
+ 12px auto;
+}
+
+.profile-sns {
+  margin-top: 20px;
+}
+.two-column {
+	display: grid;
+	grid-template-columns: 1.1fr 0.9fr;
+	gap: 28px;
+	align-items: start;
+}
+
+@media (max-width: 860px) {
+	.two-column {
+		grid-template-columns: 1fr;
+	}
+}
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.profile-media .badge-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.profile-media .badge-list li {
+  width: 100%;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  display: block;
+  margin: 12px 0 16px 0;
+}.two-column {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.profile-media .badge-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.profile-media .badge-list li {
+  width: 100%;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  display: block;
+  margin: 12px 0 16px 0;
+}
+<p class="profile-sns">
+<a href="https://instagram.com/sukkiri.kurashi" target="_blank" rel="noopener">
+Instagram @sukkiri.kurashi
+</a>
+</p>
+.profile-sns a {
+  color: #3b2f1a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-sns a:hover {
+  color: #8a6a4a;
+}
+.profile-sns {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.profile-sns a,
+.profile-sns a:visited,
+.profile-sns a:link {
+  color: #3b2f1a;
+  text-decoration: none;
+}
+
+.profile-sns a:hover {
+  color: #8a6a4a;
+}
+
+/* お問い合わせ */
+.contact-form label {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.label-text {
+	display: block;
+	margin-bottom: 6px;
+	color: var(--fg);
+	font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #e5d6c4;
+	border-radius: 8px;
+	background: #fff;
+	font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	outline: none;
+	border-color: var(--accent);
+	box-shadow: 0 0 0 3px rgba(209, 180, 154, .15);
+}
+
+.actions {
+	margin-top: 8px;
+}
+
+@mediaーtc (max-width: 600px) {
+	.brand-name {
+  white-space: nowrap;
+}
+
+	.title {
+		font-size: 2rem;
+	}
+
+	.lead {
+  font-size: 1rem;
+  line-height: 2.1;
+  color: #555;
+}
+}
+
+.site-footer {
+	padding: 28px 0;
+	text-align: center;
+	color: var(--muted);
+	background: #fff;
+	border-top: 1px solid #f0e7dc;
+}
+
+.small-print {
+	font-size: .9rem;
+	margin: 0;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.cta-row {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-top: 18px;
+}
+.cta-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+
+/* 画面には出さず、読み上げ・SEO用に残す */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+.section {
+  padding: 60px 0;
+}
+.achievements-list li {
+  margin-bottom: 8px;
+}
+.service-item {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+}
+.btn-primary {
+  background: #222;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #444;
+}
+
+
+
+.achievements span {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  background: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;  margin: 24px 0 20px;
+}
+
+.service-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.grid.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.service-item:nth-child(3) {
+  grid-column: 1 / -1;
+}
+.site-footer a{
+color:#555;
+text-decoration:none;
+}
+
+.site-footer a:hover{
+text-decoration:underline;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 32px;
+}
+.footer-nav {
+  display: flex;
+  .footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.footer-nav a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+.footer-sub {
+  color: #666;
+  font-size: 0.95rem;
+}
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+ gap: 16px;
+  margin-top: 16px;
+}
+
+.activity-item {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.activity-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.activity-item p {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: left;
+}
+.activity-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.activity-item img:hover {
+  transform: scale(1.05);
+}
+.achievements a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.achievements span {
+  transition: all 0.2s ease;
+}
+
+.achievements span:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.lead{
+  font-size: 1rem;
+  line-height: 2;
+  color: #555;
+}
+.achievements span {
+  margin-right: 12px;
+}
+.activity-item {
+  width: 100%;
+  padding-bottom: 10px;
+  transition: transform 0.25s ease;
+}
+
+.activity-item:hover {
+  transform: translateY(-4px);
+}
+.price-card {
+  background: #fff;
+  border: 1px solid #e9e4de;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-top: 20px;
+   box-shadow: var(--shadow);
+}
+
+.price-card h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.price-card ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+#media-tv .activity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+#media-tv .activity-item img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.service-meta{
+  font-size: 0.85rem;
+  color:#777;
+  margin-top:6px;
+  border:none;
+  line-height:1.4;
+}
+.service-catch{
+margin-bottom: 8px;
+font-size: 0.9rem;
+color: var(--muted);
+font-weight: 500;
+}
+.service-item{
+margin-top: 16px;
+}
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  padding: 40px 0;
+}
+.site-footer{
+  border-top: 1px solid #eee;
+ margin-top: 100px;
+  padding: 40px 0 50px;
+}
+.footer-nav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
