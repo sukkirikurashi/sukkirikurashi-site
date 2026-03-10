@@ -898,12 +898,6 @@ display:block;
     padding-top: 24px;
   }
 
-  .hero-inner {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 20px !important;
-  }
 
   img.hero {
     display: block;
@@ -971,18 +965,6 @@ font-size:42px !important;
 line-height:1.1;
 }
 
-.hero-inner img.hero{
-margin-top:40px !important;
-}
-
-}
-.hero-inner{
-padding-top:40px !important;
-}
-@media (max-width:768px){
-
-.hero-inner img.hero{
-object-position:center 20%;
 }
 
 .hero{
