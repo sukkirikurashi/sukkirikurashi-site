@@ -898,21 +898,19 @@ body {
   }
 }
 @media (max-width: 768px) {
+
   .hero-inner {
     gap: 20px;
   }
 
   .hero-photo {
-    width: min(70vw, 280px);
+    width: min(66vw, 260px);
+    margin-top: 40px;
     margin-bottom: 16px;
   }
 
   .hero-content .title {
     font-size: 48px;
   }
-}
-@media (max-width:768px){
-  .hero-photo{
-    margin-top: 40px;
-  }
+
 }
