@@ -941,3 +941,8 @@ display:block;
     text-align: center !important;
   }
 }
+@media (max-width: 768px) {
+  img.hero {
+    margin-top: 24px !important;
+  }
+}
