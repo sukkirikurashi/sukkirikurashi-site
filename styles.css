@@ -1112,3 +1112,29 @@ display:block;
 .activity-grid > * {
   width: 100% !important;
 }
+@media (max-width: 768px) {
+  .activity-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    align-items: start !important;
+  }
+
+  .activity-grid .activity-item {
+    display: block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: none !important;
+    margin: 0 !important;
+  }
+
+  .activity-grid .activity-item img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 3 / 4 !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+  }
+}
