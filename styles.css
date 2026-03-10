@@ -929,3 +929,7 @@ display:block;
   height: auto;
   border-radius: 10px;
 }
+.media-tv img {
+  width: 100% !important;
+  height: auto !important;
+}
