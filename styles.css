@@ -943,6 +943,6 @@ display:block;
 }
 @media (max-width: 768px) {
   img.hero {
-    margin-top: 24px !important;
+    margin-top: 32px !important;
   }
 }
