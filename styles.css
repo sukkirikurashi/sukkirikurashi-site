@@ -906,7 +906,10 @@ body {
 
 }
 /* PCヒーロー調整 */
-@media (min-width: 769px) 
-.hero-photo{
-  width: min(420px, 30vw);
+@media (min-width: 769px) {
+
+  .hero-photo{
+    width: min(420px, 30vw);
+  }
+
 }
