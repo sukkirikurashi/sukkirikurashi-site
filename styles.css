@@ -933,3 +933,25 @@ display:block;
   width: 100% !important;
   height: auto !important;
 }
+/* メディア欄 強制スマホ調整 */
+.media-list li,
+.media-list img,
+.media-tv,
+.media-tv img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.media-list li {
+  overflow: visible !important;
+}
+
+@media (max-width: 768px) {
+  .media-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+}
