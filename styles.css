@@ -789,3 +789,55 @@ margin-top: 16px;
   gap:20px;
   flex-wrap:wrap;
 }
+/* まず入れるスマホ土台 */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .brand-name {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .brand-sub {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .global-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .global-nav a {
+    display: inline-block;
+    font-size: 14px;
+  }
+}
