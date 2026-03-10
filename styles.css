@@ -903,10 +903,15 @@ body {
   }
 
   .hero-photo {
-    width: min(86vw, 340px);
+    width: min(72vw, 300px);
   }
 
   .hero-content .title {
     font-size: 48px;
+  }
+}
+@media (max-width:768px){
+  .hero-photo{
+    margin-top: 40px;
   }
 }
