@@ -1035,3 +1035,11 @@ display:block;
     border-radius: 12px !important;
   }
 }
+@media (max-width: 768px) {
+  .media-card,
+  .media-section,
+  .two-col {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+  }
+}
