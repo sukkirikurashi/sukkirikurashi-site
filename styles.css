@@ -978,3 +978,6 @@ object-position:center 20%;
 .hero-inner img.hero{
 object-fit:contain !important;
 }
+.hero{
+padding-top:40px;
+}
