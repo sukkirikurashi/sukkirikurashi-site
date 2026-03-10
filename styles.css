@@ -906,8 +906,7 @@ display:block;
   @media (max-width: 768px) {
   .media-tv img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 160px;
+    object-fit: cover;
     border-radius: 10px;
   }
-}
