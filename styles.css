@@ -39,10 +39,20 @@ html {
 }
 .hero-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 72px;
-}.hero {
-  padding: 72px 0 56px;
+}
+@media (max-width: 768px) {
+
+.hero-inner {
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-photo{
+  margin-top:40px;
+}
+
 }
 
 .title {
