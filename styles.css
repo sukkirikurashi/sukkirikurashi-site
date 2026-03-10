@@ -916,4 +916,8 @@ body {
 .hero-inner{
   align-items: center;
 }
-
+@media (min-width: 769px) {
+  .hero {
+    padding-top: 32px;
+  }
+}
