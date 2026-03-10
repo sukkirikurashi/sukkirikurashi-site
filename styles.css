@@ -841,3 +841,16 @@ body {
     font-size: 14px;
   }
 }
+/* スマホヒーロー調整 */
+@media (max-width: 768px) {
+
+.hero {
+  grid-template-columns: 1fr;
+}
+
+.hero-title {
+  writing-mode: horizontal-tb;
+  font-size: 36px;
+}
+
+}
