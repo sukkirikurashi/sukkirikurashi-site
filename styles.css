@@ -997,3 +997,16 @@ display:block;
     display: block;
   }
 }
+.media-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.media-list img {
+  width: 100%;
+  aspect-ratio: 3 / 5;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
