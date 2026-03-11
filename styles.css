@@ -21,11 +21,7 @@ header .wrap{
 * {
   box-sizing: border-box;
 }
-.wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
+
 
 section {
   scroll-margin-top: 120px;
@@ -34,11 +30,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.title {
-  font-size: 44px;
-  font-weight: 700;
 
-}
 .subtitle {
   font-size: 18px;
   color: var(--muted);
@@ -99,7 +91,7 @@ nav a[href="#request"]:hover {
 	padding: 8px 12px;
 	background: #fff;
 	border: 1px solid #ddd;
-s}
+}
 
 /* ヘッダー */
 header{
@@ -168,10 +160,6 @@ color: inherit;
 }
 
 /* ヒーロー */
-.hero {
-	background: #fff;
-padding: 20px 0;
-}
 
 
 .tagline {
@@ -194,49 +182,13 @@ padding: 20px 0;
   color: #555;
 }
 
-.hero-inner {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-}
 
 
-@media (max-width: 768px) {
-  .hero-inner {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 24px;
-  }
 
 
-  .hero-content .title {
-    font-size: 42px;
-    line-height: 1.1;
-  }
-}
 
 /* ヒーロー実績バッジ */
-.hero-badges{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin:16px 0 12px;
-}
 
-.hero-badge{
-  background:#fff;
-  border:1px solid #e9e4de;
-  border-radius:999px;
-  padding:8px 14px;
-  font-size:0.9rem;
-  transition:all .2s ease;
-  cursor:pointer;
-}
-
-.hero-badge:hover{
-  background:#f3ece6;
-  transform:translateY(-2px);
-}
 .achievements a {
   text-decoration: none;
   color: inherit;
@@ -423,11 +375,7 @@ padding: 20px 0;
   display: block;
   margin: 12px 0 16px 0;
 }
-<p class="profile-sns">
-<a href="https://instagram.com/sukkiri.kurashi" target="_blank" rel="noopener">
-Instagram @sukkiri.kurashi
-</a>
-</p>
+
 .profile-sns a {
   color: #3b2f1a;
   text-decoration: none;
@@ -486,7 +434,7 @@ Instagram @sukkiri.kurashi
 	margin-top: 8px;
 }
 
-@mediaーtc (max-width: 600px) {
+@media (max-width: 600px) {
 	.brand-name {
   white-space: nowrap;
 }
@@ -806,34 +754,11 @@ body {
     font-size: 14px;
   }
 }
-/* ヒーロー */
 
-.hero-content .title {
-  font-size: 2.6rem;
-  line-height: 1.1;
-}
-
-/* スマホ */
-@media (max-width: 768px) {
-
-  .hero-content .title {
-    font-size: 48px;
-    line-height: 1.1;
-  }
-
-}
-/* ---------- ヒーロー全体 ---------- */
-.hero {
-  padding-top: 56px;
-  padding-bottom: 56px;
-}
 
 
 
 /* ---------- 文字 ---------- */
-.hero-content{
-  max-width: 640px;
-}
 
 .subtitle{
   margin-top: 6px;
@@ -843,9 +768,6 @@ body {
   line-height: 1.8;
 }
 
-.hero-content p{
-  text-wrap: pretty;
-}
 
 /* ---------- 実績バッジ ---------- */
 .achievements{
@@ -891,40 +813,33 @@ body {
   white-space: nowrap;
   flex: 0 0 auto;
   box-shadow: none;
+
+.hero {
+  background: #fff;
+  padding: 20px 0;
 }
-/* ヒーロー共通 */
+
 .hero-inner {
   display: flex;
   align-items: flex-start;
-  gap: 72px;
+  gap: 40px;
 }
 
+.hero-content {
+  max-width: 640px;
+}
 
 .hero-content .title {
   font-size: 2.6rem;
   line-height: 1.1;
+  margin: 6px 0;
+  letter-spacing: .5px;
 }
 
-/* スマホ */
-@media (max-width: 768px) {
-  .hero-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .hero-content .title {
-    font-size: 48px;
-    line-height: 1.1;
-  }
-}
-
-/* PC */
-@media (min-width: 769px) {
-  .hero-inner {
-    align-items: center;
-  }
-
+.subtitle {
+  font-size: 18px;
+  color: var(--muted);
+  margin: 10px 0 18px;
 }
 
 .hero-photo {
@@ -932,8 +847,11 @@ body {
   height: auto;
 }
 
-
 @media (min-width: 769px) {
+  .hero-inner {
+    align-items: center;
+  }
+
   .hero-photo {
     width: min(420px, 30vw);
     margin-top: 0;
@@ -942,9 +860,20 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
   .hero-photo {
-    width: min(66vw, 260px) ;
-    margin-top: 20px ;
-    margin-bottom: 0 ;
+    width: min(66vw, 260px);
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .hero-content .title {
+    font-size: 48px;
+    line-height: 1.1;
   }
 }
