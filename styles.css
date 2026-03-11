@@ -939,18 +939,18 @@ body {
     display: block;
   }
 }
-.hero-buttons{
+.achievements{
   display: flex;
   flex-wrap: nowrap;
   gap: 16px;
 }
 
-.hero-buttons .btn{
+.achievements .btn{
   padding: 14px 22px;
 }
 
 @media (min-width: 1024px){
-  .hero-buttons{
+  .achievements{
     min-width: 420px;
   }
 }
