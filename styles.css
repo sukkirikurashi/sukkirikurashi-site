@@ -296,15 +296,14 @@ color: inherit;
   border-radius: 10px;
 }
 /* プロフィール */
-.profile-photo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-   object-position: center top;
-  border-radius: 50%;
-   display:block;
+..profile-photo {
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:50%;
+  display:block;
   margin:12px 0 16px 0;
- 12px auto;
 }
 
 .profile-sns {
@@ -876,8 +875,16 @@ body {
     font-size: 48px;
     line-height: 1.1;
   }
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 60px;
-  }
+
+  @media (max-width:768px){
+.hero{
+  padding-top:80px;
+}
+}
+
+.hero-photo{
+  display:block;
+  height:auto;
+  object-fit:contain;
+  object-position:center top;
 }
