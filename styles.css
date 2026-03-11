@@ -194,29 +194,6 @@ padding: 70px 0;
   color: #555;
 }
 
-.btn {
-	display: inline-block;
-	padding: 12px 20px;
-	border-radius: 999px;
-	border: 1px solid #e5d6c4;
-	background: #fff;
-	color: #3b2f1a;
-	text-decoration: none;
-	font-weight: 600;
-	transition: background .2s, color .2s, transform .2s;
-}
-
-.btn:hover {
-	background: #f3e7d9;
-	transform: translateY(-1px);
-}
-
-.btn-ghost {
-	background: #fff;
-	border-color: #e6dbcc;
-	color: #3b2f1a;
-}
-
 .hero-inner {
   display: flex;
   align-items: flex-start;
