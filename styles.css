@@ -814,11 +814,6 @@ body {
   }
 }
 /* ヒーロー */
-.hero-inner {
-  display: flex;
-  align-items: flex-start;
-  gap: 72px;
-}
 
 .hero-content .title {
   font-size: 2.6rem;
@@ -827,18 +822,6 @@ body {
 
 /* スマホ */
 @media (max-width: 768px) {
-
-  .hero-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .hero-photo {
-    width: min(66vw, 260px);
-    margin-top: 70px;
-    margin-bottom: 0;
-  }
 
   .hero-content .title {
     font-size: 48px;
@@ -852,40 +835,7 @@ body {
   padding-bottom: 56px;
 }
 
-.hero-inner{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  align-items: center;
-}
 
-/* ---------- 写真 ---------- */
-.hero-photo{
-  display: block;
-  width: min(420px, 92%);
-  margin: 0 auto;
-}
-
-@media (min-width: 769px){
-  .hero-inner{
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 40px;
-    align-items: center;
-  }
-
-  .hero-photo{
-    width: min(420px, 30vw);
-    margin: 0;
-    transform: translateY(-10px);
-  }
-}
-
-@media (min-width: 1200px){
-  .hero-inner{
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 36px;
-  }
-}
 
 /* ---------- 文字 ---------- */
 .hero-content{
@@ -948,4 +898,53 @@ body {
   white-space: nowrap;
   flex: 0 0 auto;
   box-shadow: none;
+}
+/* ヒーロー共通 */
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 72px;
+}
+
+.hero-photo {
+  display: block;
+  height: auto;
+}
+
+.hero-content .title {
+  font-size: 2.6rem;
+  line-height: 1.1;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero-photo {
+    width: min(66vw, 260px);
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .hero-content .title {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+}
+
+/* PC */
+@media (min-width: 769px) {
+  .hero-inner {
+    align-items: center;
+  }
+
+  .hero-photo {
+    width: min(420px, 30vw);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
