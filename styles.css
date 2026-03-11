@@ -199,6 +199,9 @@ padding: 70px 0;
   align-items: flex-start;
   gap: 48px;
 }
+.hero-content{
+  margin-top: -6px;
+}
 
 @media (max-width: 768px) {
   .hero-inner {
