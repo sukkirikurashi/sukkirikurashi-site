@@ -877,6 +877,5 @@ body {
     line-height: 1.1;
   }
 .hero-photo {
-  border: 8px solid red !important;
-  width: 180px !important;
+  border: 6px solid red !important;
 }
