@@ -939,11 +939,6 @@ body {
     display: block;
   }
 }
-.achievements{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
 
 .achievements a{
   display: inline-flex;
@@ -964,4 +959,19 @@ body {
 .achievements a{
   padding: 12px 18px;
   font-size: 0.95rem;
+}
+
+.achievements{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+}
+
+@media (min-width:1024px){
+  .achievements{
+    flex-wrap:nowrap;
+  }
+}
+.achievements a{
+  white-space:nowrap;
 }
