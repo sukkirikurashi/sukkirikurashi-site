@@ -35,14 +35,14 @@ html {
 }
 
 .title {
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 700;
 
 }
 .subtitle {
   font-size: 18px;
   color: var(--muted);
-  margin: 10px 0 16px;
+  margin: 10px 0 18px;
 }
 
 html,
@@ -939,6 +939,15 @@ body {
 .achievements a{
   padding:10px 16px;
   font-size:0.92rem;
+}
+.subtitle{
+  margin-top:6px;
+}
+.achievements{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
 }
 .hero{
   padding-top:60px;
