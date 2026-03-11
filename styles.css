@@ -899,10 +899,6 @@ body {
   gap: 72px;
 }
 
-.hero-photo {
-  display: block;
-  height: auto;
-}
 
 .hero-content .title {
   font-size: 2.6rem;
@@ -929,6 +925,22 @@ body {
     align-items: center;
   }
 
+}
+
+.hero-photo {
+  display: block;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-photo {
+    width: min(66vw, 260px);
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 769px) {
   .hero-photo {
     width: min(420px, 30vw);
     margin-top: 0;
