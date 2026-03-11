@@ -906,58 +906,27 @@ body {
 
 }
 /* PCヒーロー調整 */
-@media (min-width: 769px) {
-
+@media (min-width:769px){
   .hero-photo{
-    width: min(420px, 30vw);
+    width:min(420px,30vw);
   }
-
 }
+
 .hero-inner{
-  align-items: center;
-}
-
-@media (min-width: 1200px) {
-  .hero {
-    grid-template-columns: 0.95fr 1.15fr;
-    gap: 56px;
-  }
-
-  .hero-text {
-    max-width: 640px;
-  }
-}
-.hero-text p {
-  text-wrap: pretty;
-}
-.pc-break {
-  display: none;
-}
-
-@media (min-width: 1200px) {
-  .pc-break {
-    display: block;
-  }
-}
-/* 実績バッジ */
-.achievements{
-  display:flex;
-  flex-wrap:wrap;
-  gap:16px;
-}
-
-.achievements a{
-  display:inline-flex;
   align-items:center;
-  justify-content:center;
-  padding:12px 18px;
-  border:1px solid #ddd;
-  border-radius:999px;
-  background:#fff;
-  font-size:0.95rem;
-  white-space:nowrap;
 }
 
-.achievements strong{
-  font-weight:700;
+@media (min-width:1200px){
+  .hero{
+    grid-template-columns:0.95fr 1.15fr;
+    gap:40px;
+  }
+
+  .hero-text{
+    max-width:640px;
+  }
+}
+
+.hero-text p{
+  text-wrap:pretty;
 }
