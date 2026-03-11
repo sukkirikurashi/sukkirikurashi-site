@@ -943,8 +943,8 @@ body {
 
 @media (max-width: 768px) {
   .hero-photo {
-    width: min(66vw, 260px) !important;
-    margin-top: 20px !important;
-    margin-bottom: 0 !important;
+    width: min(66vw, 260px) ;
+    margin-top: 20px ;
+    margin-bottom: 0 ;
   }
 }
