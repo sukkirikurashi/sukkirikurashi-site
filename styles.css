@@ -941,16 +941,27 @@ body {
 }
 .achievements{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
-.achievements .btn{
+.achievements a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
   padding: 14px 22px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #fff;
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 
-@media (min-width: 1024px){
-  .achievements{
-    min-width: 420px;
-  }
+.achievements strong{
+  font-weight: 700;
+}
+.achievements a{
+  padding: 12px 18px;
+  font-size: 0.95rem;
 }
