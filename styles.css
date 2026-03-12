@@ -900,16 +900,9 @@ header nav a[href="#request"]:hover {
     gap: 20px;
   }
 
-  .hero-photo {
-    width: min(66vw, 260px);
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
+ 
 
-  .hero-content .title {
-    font-size: 48px;
-    line-height: 1.1;
-  }
+  
 }.hero-photo {
   display: block;
   height: auto;
