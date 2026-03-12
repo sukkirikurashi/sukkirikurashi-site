@@ -969,11 +969,41 @@ header nav a[href="#request"]{
   }
 }
 @media (max-width: 768px) {
-  header nav a[href="#request"] {
-    border: none !important;
-    padding: 0 !important;
-    background: transparent !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .brand-sub {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .global-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+  }
+
+  .global-nav li {
+    flex: 0 0 auto;
+  }
+
+  .global-nav a {
+    display: inline-block;
+    font-size: 13px;
+    white-space: nowrap;
   }
 }
