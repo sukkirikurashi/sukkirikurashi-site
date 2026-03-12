@@ -475,17 +475,6 @@ color: inherit;
 	border: 0;
 }
 
-.cta-row {
-	display: flex;
-	gap: 12px;
-	flex-wrap: wrap;
-	margin-top: 18px;
-}
-.cta-row {
-  display: flex;
-  gap: 16px;
-  margin-top: 24px;
-}
 
 
 /* 画面には出さず、読み上げ・SEO用に残す */
@@ -796,28 +785,7 @@ body {
 }
 
 /* ---------- ボタン ---------- */
-.cta-row{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 24px;
-}
 
-.cta-row .btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  min-width: 0;
-  padding: 12px 22px;
-  white-space: nowrap;
-  flex: 0 0 auto;
-  box-shadow: none;
-
-.hero {
-  background: #fff;
-  padding: 20px 0;
-}
 
 .hero-inner {
   display: flex;
@@ -904,6 +872,13 @@ body {
   background: #1f1f1f;
   color: #fff;
 }
+.cta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
 .cta-row a {
   display: inline-flex;
   align-items: center;
