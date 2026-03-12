@@ -1007,3 +1007,6 @@ header nav a[href="#request"]{
     white-space: nowrap;
   }
 }
+.global-nav ul{
+  justify-content: flex-start;
+}
