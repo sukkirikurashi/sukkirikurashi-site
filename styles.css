@@ -665,11 +665,7 @@ margin-top: 16px;
   gap:20px;
   flex-wrap:wrap;
 }
-/* まず入れるスマホ土台 */
-* {
-  box-sizing: border-box;
-}
-
+/* ===== 共通 ===== */
 img {
   max-width: 100%;
   height: auto;
@@ -679,105 +675,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
-  .wrap {
-    width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .header-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .brand-name {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .brand-sub {
-    font-size: 12px;
-    line-height: 1.6;
-  }
-
-  .global-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 16px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .global-nav a {
-    display: inline-block;
-    font-size: 14px;
-  }
-}
-
-
-
-
-/* ---------- 文字 ---------- */
-
-.subtitle{
-  margin-top: 6px;
-}
-
-.lead{
-  line-height: 1.8;
-}
-
-
-/* ---------- 実績バッジ ---------- */
-.achievements{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 12px;
-  margin-top: 14px;
-}
-
-.achievements a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:10px 16px;
-  border:1px solid #e8ded2;
-  border-radius:999px;
-  background:#f7f2ec;
-  font-size:0.9rem;
-  white-space: nowrap;
-  text-decoration: none;
-  color: inherit;
-}
-
-.achievements strong{
-  font-weight: 700;
-}
-
-/* ---------- ボタン ---------- */
-
-
-
-.subtitle {
-  font-size: 18px;
-  color: var(--muted);
-  margin: 10px 0 18px;
-}
-
-
-
-
-
-/* ===== スマホサイズを落ち着かせる ===== */
-@media (max-width: 768px) {
-  .brand-name {
-    font-size: 1.1rem !important;
-    line-height: 1.2 !important;
-  }
 /* ===== ご依頼ボタン ===== */
 header nav a[href="#request"] {
   display: inline-flex;
@@ -797,7 +694,7 @@ header nav a[href="#request"]:hover {
   color: #ffffff;
 }
 
-/* ===== ヒーローの実績バッジ ===== */
+/* ===== 実績バッジ ===== */
 .achievements {
   display: flex;
   flex-wrap: wrap;
@@ -813,14 +710,14 @@ header nav a[href="#request"]:hover {
   border: 1px solid #e8ded2;
   border-radius: 999px;
   background: #ffffff;
-  font-size: 0.9rem;
-  white-space: nowrap;
+  color: #1f1f1f;
   text-decoration: none;
-  color: inherit;
+  white-space: nowrap;
 }
 
 .achievements a span {
   all: unset;
+  display: inline;
 }
 
 .achievements strong {
@@ -889,102 +786,55 @@ header nav a[href="#request"]:hover {
   border-color: #333333;
   color: #ffffff;
 }
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 80px;
-  }
 
-  .hero-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-
-
-.cta-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 24px;
-}
-
-.cta-row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.cta-row .btn-ghost {
-  background: #ffffff;
-  border: 1px solid #afa28a;
-  color: #1f1f1f;
-}
-
-.cta-row .btn-ghost:hover {
-  background: #afa28a;
-  border-color: #afa28a;
-  color: #ffffff;
-}
-
-.cta-row .btn-primary {
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-}
-
-.cta-row .btn-primary:hover {
-  background: #333333;
-  border-color: #333333;
-  color: #ffffff;
-}
-
-#contact .btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-#contact .btn-primary:hover {
-  background: #333333;
-  border-color: #333333;
-  color: #ffffff;
-}
+/* ===== ヒーロー画像 ===== */
 .hero-photo {
   display: block;
   height: auto;
   object-fit: contain;
   object-position: center 20%;
 }
-.achievements a span {
-  all: unset;
-  display: inline;
-}
-.achievements a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 16px;
-  border: 1px solid #e8ded2;
-  border-radius: 999px;
-  background: #ffffff;
-  color: #1f1f1f;
-  text-decoration: none;
-  white-space: nowrap;
-}
+
+/* ===== スマホ ===== */
 @media (max-width: 768px) {
+  .wrap {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .brand-sub {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .global-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .global-nav a {
+    display: inline-block;
+    font-size: 14px;
+  }
+
   .hero {
     padding-top: 80px;
   }
@@ -1003,61 +853,17 @@ header nav a[href="#request"]:hover {
     object-position: center 20%;
   }
 
-  .hero-content .title {
+  .hero-content .title,
+  h1 {
     font-size: 48px;
     line-height: 1.1;
   }
-}.cta-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 24px;
-}
 
-.cta-row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.cta-row .btn-ghost {
-  background: #ffffff;
-  border: 1px solid #afa28a;
-  color: #1f1f1f;
-}
-
-.cta-row .btn-ghost:hover {
-  background: #afa28a;
-  border-color: #afa28a;
-  color: #ffffff;
-}
-
-.cta-row .btn-primary {
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-}
-
-.cta-row .btn-primary:hover {
-  background: #333333;
-  border-color: #333333;
-  color: #ffffff;
-}
-
-#contact .btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 700;
+  .subtitle,
+  .lead,
+  p,
+  li,
+  a {
+    font-size: 1rem;
+  }
 }
