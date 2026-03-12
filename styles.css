@@ -1183,3 +1183,113 @@ header nav a[href="#request"]:hover {
   border-color: #333333;
   color: #ffffff;
 }
+/* ===== 全体の文字をNoto Sans JPに戻す ===== */
+html,
+body,
+button,
+input,
+textarea,
+select,
+a,
+span,
+p,
+div,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Arial, sans-serif !important;
+}
+
+/* ===== ご依頼ボタン：白地＋黒枠に戻す ===== */
+header nav a[href="#request"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #1f1f1f;
+  background: #ffffff;
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+header nav a[href="#request"]:hover {
+  background: #afa28a;
+  border-color: #afa28a;
+  color: #ffffff;
+}
+
+/* ===== 実績バッジを前みたいに白系へ戻す ===== */
+.hero-badge,
+.achievements a span {
+  background: #ffffff !important;
+  border: 1px solid #e9e4de !important;
+  color: #1f1f1f !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* ===== ヒーローの2ボタンだけ整える ===== */
+.hero .cta-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero .cta-row .btn-ghost {
+  background: #ffffff !important;
+  border: 1px solid #afa28a !important;
+  color: #1f1f1f !important;
+}
+
+.hero .cta-row .btn-ghost:hover {
+  background: #afa28a !important;
+  border-color: #afa28a !important;
+  color: #ffffff !important;
+}
+
+.hero .cta-row .btn-primary {
+  background: #1f1f1f !important;
+  border: 1px solid #1f1f1f !important;
+  color: #ffffff !important;
+}
+
+.hero .cta-row .btn-primary:hover {
+  background: #333333 !important;
+  border-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* ===== スマホサイズを落ち着かせる ===== */
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 1.1rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-content .title,
+  h1 {
+    font-size: 42px !important;
+    line-height: 1.1 !important;
+  }
+
+  .subtitle,
+  .lead,
+  p,
+  li,
+  a {
+    font-size: 1rem !important;
+  }
+}
