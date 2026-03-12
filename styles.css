@@ -760,7 +760,16 @@ header nav a[href="#request"]:hover {
   color: #ffffff;
 }
 
+.cta-row .btn-primary {
+  background: #afa28a;
+  border: 1px solid #afa28a;
+  color: #ffffff;
+}
 
+.cta-row .btn-primary:hover {
+  background: #9f927b;
+  border-color: #9f927b;
+}
 
 .cta-row .btn-primary:hover {
   background: #333333;
