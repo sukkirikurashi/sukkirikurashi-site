@@ -1010,3 +1010,6 @@ header nav a[href="#request"]{
 .global-nav ul{
   justify-content: flex-start;
 }
+.global-nav li:last-child{
+  margin-left: 12px;
+}
