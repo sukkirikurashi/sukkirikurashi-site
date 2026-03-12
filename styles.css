@@ -867,3 +867,18 @@ header nav a[href="#request"]:hover {
     font-size: 1rem;
   }
 }
+/* ===== PCヒーローレイアウト ===== */
+@media (min-width: 769px) {
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .hero-photo {
+    width: 420px;
+  }
+
+}
