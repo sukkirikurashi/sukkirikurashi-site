@@ -1007,9 +1007,3 @@ header nav a[href="#request"]{
     white-space: nowrap;
   }
 }
-.global-nav ul{
-  justify-content: flex-start;
-}
-.global-nav li:last-child{
-  margin-left: 12px;
-}
