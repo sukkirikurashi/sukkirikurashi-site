@@ -911,3 +911,59 @@ body {
   background: #333333;
   border-color: #333333;
 }
+/* --- requestボタン復活 --- */
+nav a[href="#request"] {
+  border: 1px solid #afa28a;
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+nav a[href="#request"]:hover {
+  background: #afa28a;
+  color: #ffffff;
+}
+
+/* --- CTAボタン復活 --- */
+.cta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.cta-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.cta-row .btn-ghost {
+  background: #afa28a;
+  border: 1px solid #afa28a;
+  color: #ffffff;
+}
+
+.cta-row .btn-ghost:hover {
+  background: #9f927b;
+  border-color: #9f927b;
+  color: #ffffff;
+}
+
+.cta-row .btn-primary {
+  background: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  color: #ffffff;
+}
+
+.cta-row .btn-primary:hover {
+  background: #333333;
+  border-color: #333333;
+  color: #ffffff;
+}
