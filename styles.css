@@ -1087,33 +1087,6 @@ header nav a[href="#request"]:hover {
   color: #ffffff;
 }
 
-/* ===== ヒーロー実績バッジを前みたいに戻す ===== */
-.hero .achievements a,
-.hero .achievements a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-.hero .achievements a span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 16px;
-  background: #ffffff;
-  border: 1px solid #e9e4de;
-  border-radius: 999px;
-  color: #1f1f1f;
-  font-weight: 600;
-  box-shadow: none;
-  transform: none;
-}
-
-.hero .achievements a span:hover {
-  background: #f7f3ed;
-  color: #1f1f1f;
-  transform: none;
-}
-
 /* ===== ヒーローの2つのボタン ===== */
 .hero .cta-row {
   display: flex;
