@@ -889,3 +889,18 @@ body {
   object-fit:contain;
   object-position:center top;
 }
+.btn-ghost {
+  background: #afa28a;
+  border: 1px solid #afa28a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-ghost:hover {
+  background: #9f927b;
+}
+
+.btn-primary {
+  background: #1f1f1f;
+  color: #fff;
+}
