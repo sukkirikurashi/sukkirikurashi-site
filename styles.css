@@ -203,10 +203,6 @@ color: inherit;
   color: inherit;
 }
 
-.achievements a span {
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
 
 .achievements a span:hover {
   background: #f3ece6;
@@ -1225,16 +1221,6 @@ header nav a[href="#request"]:hover {
   color: #ffffff;
 }
 
-/* ===== 実績バッジを前みたいに白系へ戻す ===== */
-.hero-badge,
-.achievements a span {
-  background: #ffffff !important;
-  border: 1px solid #e9e4de !important;
-  color: #1f1f1f !important;
-  border-radius: 999px !important;
-  box-shadow: none !important;
-  transform: none !important;
-}
 
 /* ===== ヒーローの2ボタンだけ整える ===== */
 .hero .cta-row a {
@@ -1292,4 +1278,22 @@ header nav a[href="#request"]:hover {
   a {
     font-size: 1rem !important;
   }
+}
+.hero .achievements a,
+.hero .achievements a:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  background: #ffffff;
+  border: 1px solid #e9e4de;
+  border-radius: 999px;
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.hero .achievements a span {
+  all: unset;
 }
