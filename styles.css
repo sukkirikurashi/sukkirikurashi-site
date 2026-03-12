@@ -1297,21 +1297,44 @@ header nav a[href="#request"]:hover {
 .hero .achievements a span {
   all: unset;
 }
-.hero .hero-actions a{
-  display:inline-block;
-  padding:12px 26px;
-  border-radius:999px;
-  font-weight:600;
-  text-decoration:none;
+/* PCでもヒーローの文字をゴシックに固定 */
+.hero,
+.hero * {
+  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Arial, sans-serif !important;
 }
 
-.hero .hero-actions a:first-child{
-  border:1px solid #afa28a;
-  color:#1f1f1f;
-  background:#fff;
+/* ヒーローの2ボタン */
+.hero .cta-row a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 14px 28px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
 }
 
-.hero .hero-actions a:last-child{
-  background:#1f1f1f;
-  color:#fff;
+.hero .cta-row .btn-ghost {
+  background: #ffffff !important;
+  border: 1px solid #afa28a !important;
+  color: #1f1f1f !important;
+}
+
+.hero .cta-row .btn-ghost:hover {
+  background: #afa28a !important;
+  border-color: #afa28a !important;
+  color: #ffffff !important;
+}
+
+.hero .cta-row .btn-primary {
+  background: #1f1f1f !important;
+  border: 1px solid #1f1f1f !important;
+  color: #ffffff !important;
+}
+
+.hero .cta-row .btn-primary:hover {
+  background: #333333 !important;
+  border-color: #333333 !important;
+  color: #ffffff !important;
 }
