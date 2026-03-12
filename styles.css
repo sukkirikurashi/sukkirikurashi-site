@@ -1007,3 +1007,12 @@ header nav a[href="#request"]{
     white-space: nowrap;
   }
 }
+@media (max-width: 768px) {
+  .global-nav ul {
+    gap: 8px;
+  }
+
+  .global-nav a {
+    font-size: 12px;
+  }
+}
