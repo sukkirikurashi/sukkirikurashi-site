@@ -916,3 +916,17 @@ header nav a[href="#request"]:hover {
 .achievements a{
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
+.global-nav ul{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+
+.global-nav li:last-child{
+  margin-left:20px;
+}
+.global-nav a[href="#request"]{
+  border:1px solid #1f1f1f;
+  border-radius:999px;
+  padding:8px 16px;
+}
