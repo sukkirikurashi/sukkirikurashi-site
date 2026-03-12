@@ -41,8 +41,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	background: var(#afa28a);
-	color: var(#afa28a);
+	background: #afa28a
+	color: #afa28a
 	font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Arial;
 	line-height: 1.75;
 }
@@ -65,13 +65,13 @@ body {
   letter-spacing: 0.05em;
 }
 nav a[href="#request"] {
-  border: 1px solid var(#afa28a);
+  border: 1px solid #afa28a;
   padding: 6px 12px;
   border-radius: 999px;
 }
 
 nav a[href="#request"]:hover {
-  background: var(#afa28a);
+  background: #afa28a;
 }
 
 /* 目次的なスキップリンク */
@@ -426,7 +426,7 @@ color: inherit;
 .contact-form input:focus,
 .contact-form textarea:focus {
 	outline: none;
-	border-color: var(#afa28a);
+	border-color: #afa28a;
 	box-shadow: 0 0 0 3px rgba(209, 180, 154, .15);
 }
 
