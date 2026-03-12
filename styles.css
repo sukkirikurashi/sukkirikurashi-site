@@ -761,14 +761,9 @@ header nav a[href="#request"]:hover {
 }
 
 .cta-row .btn-primary {
-  background: #afa28a;
-  border: 1px solid #afa28a;
+  background: #1f1f1f;
+  border: 1px solid #1f1f1f;
   color: #ffffff;
-}
-
-.cta-row .btn-primary:hover {
-  background: #9f927b;
-  border-color: #9f927b;
 }
 
 .cta-row .btn-primary:hover {
