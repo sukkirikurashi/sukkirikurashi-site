@@ -3,16 +3,16 @@ html {
 }
 /* 基本カラー */
 :root {
-	--bg: #ffffff;
-	--fg: #1f1f1f;
-	--muted: #6b6b6b;
-	--beige: #f2e6d7;
-	--beige-dark: #e6d4ba;
-	--accent: #d1b49a;
-	/* ベージュ系アクセント */
-	--card: #ffffff;
-	--shadow: 0 6px 20px rgba(0, 0, 0, .05);
+  --bg: #ffffff;
+  --fg: #1f1f1f;
+  --muted: #6b6b6b;
+  --beige: #afa28a;
+  --beige-dark: #9f927b;
+  --accent: #afa28a;
+  --card: #ffffff;
+  --shadow: 0 6px 20px rgba(0, 0, 0, .05);
 }
+
 header .wrap{
   display:flex;
   justify-content:space-between;
@@ -65,14 +65,15 @@ body {
   letter-spacing: 0.05em;
 }
 nav a[href="#request"] {
-  border: 1px solid #e6dbcc;
+  border: 1px solid var(--accent);
   padding: 6px 12px;
   border-radius: 999px;
 }
 
 nav a[href="#request"]:hover {
-  background: #f3e7d9;
+  background: var(--beige);
 }
+
 /* 目次的なスキップリンク */
 .skip-link {
 	position: absolute;
