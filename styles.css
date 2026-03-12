@@ -965,3 +965,66 @@ nav a[href="#request"]:hover {
   border-color: #333333;
   color: #ffffff;
 }
+/* ご依頼ボタン */
+nav a[href="#request"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #afa28a;
+  background: #afa28a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a[href="#request"]:hover {
+  background: #9f927b;
+  border-color: #9f927b;
+  color: #ffffff;
+}
+
+/* ヒーローのCTAボタン */
+.cta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.cta-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* サービスを見る */
+.cta-row .btn-ghost {
+  background: #afa28a;
+  border: 1px solid #afa28a;
+  color: #ffffff;
+}
+
+.cta-row .btn-ghost:hover {
+  background: #9f927b;
+  border-color: #9f927b;
+  color: #ffffff;
+}
+
+/* お問い合わせ */
+.cta-row .btn-primary {
+  background: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  color: #ffffff;
+}
+
+.cta-row .btn-primary:hover {
+  background: #333333;
+  border-color: #333333;
+  color: #ffffff;
+}
