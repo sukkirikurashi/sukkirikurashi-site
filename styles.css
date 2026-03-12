@@ -36,15 +36,14 @@ html {
   color: var(--muted);
   margin: 10px 0 18px;
 }
-
 html,
 body {
-	margin: 0;
-	padding: 0;
-	background: #afa28a
-	color: #afa28a
-	font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Arial;
-	line-height: 1.75;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Arial, sans-serif;
+  line-height: 1.75;
 }
 
 .wrap {
@@ -64,23 +63,7 @@ body {
   margin-top: 2px;
   letter-spacing: 0.05em;
 }
-nav a[href="#request"] {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid #1f1f1f;
-  background: #ffffff;
-  color: #1f1f1f;
-  text-decoration: none;
-}
 
-nav a[href="#request"]:hover {
-  background: #afa28a;
-  border-color: #afa28a;
-  color: #ffffff;
-}
 
 /* 目次的なスキップリンク */
 .skip-link {
@@ -301,7 +284,7 @@ color: inherit;
   border-radius: 10px;
 }
 /* プロフィール */
-..profile-photo {
+.profile-photo {
   width:120px;
   height:120px;
   object-fit:cover;
@@ -510,15 +493,6 @@ color: inherit;
   border-radius: 6px;
   background: #fff;
 }
-.btn-primary {
-  background: #222;
-  color: #fff;
-  border: none;
-}
-
-.btn-primary:hover {
-  background: #444;
-}
 
 
 
@@ -560,9 +534,7 @@ text-decoration:underline;
 .footer-nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
-}
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
   margin: 16px 0;
@@ -789,22 +761,6 @@ body {
 /* ---------- ボタン ---------- */
 
 
-.hero-inner {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.hero-content {
-  max-width: 640px;
-}
-
-.hero-content .title {
-  font-size: 2.6rem;
-  line-height: 1.1;
-  margin: 6px 0;
-  letter-spacing: .5px;
-}
 
 .subtitle {
   font-size: 18px;
@@ -812,259 +768,17 @@ body {
   margin: 10px 0 18px;
 }
 
-.hero-photo {
-  display: block;
-  height: auto;
-}
 
-@media (min-width: 769px) {
-  .hero-inner {
-    align-items: center;
-  }
 
-  .hero-photo {
-    width: min(420px, 30vw);
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
 
+
+/* ===== スマホサイズを落ち着かせる ===== */
 @media (max-width: 768px) {
-  .hero-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .brand-name {
+    font-size: 1.1rem !important;
+    line-height: 1.2 !important;
   }
-
-  .hero-photo {
-    width: min(66vw, 260px);
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
-
-  .hero-content .title {
-    font-size: 48px;
-    line-height: 1.1;
-  }
-
-  @media (max-width:768px){
-.hero{
-  padding-top:80px;
-}
-}
-
-.hero-photo{
-  display:block;
-  height:auto;
-  object-fit:contain;
-  object-position:center top;
-}
-.btn-ghost {
-  background: #afa28a;
-  border: 1px solid #afa28a;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-ghost:hover {
-  background: #9f927b;
-}
-
-.btn-primary {
-  background: #1f1f1f;
-  color: #fff;
-}
-.cta-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 24px;
-}
-
-.cta-row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.cta-row .btn-ghost {
-  background: #afa28a;
-  border: 1px solid #afa28a;
-  color: #ffffff;
-}
-
-.cta-row .btn-ghost:hover {
-  background: #9f927b;
-  border-color: #9f927b;
-}
-
-.cta-row .btn-primary {
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-}
-
-.cta-row .btn-primary:hover {
-  background: #333333;
-  border-color: #333333;
-}
-nav a[href="#request"] {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid #1f1f1f;
-  background: #ffffff;
-  color: #1f1f1f;
-  text-decoration: none;
-}
-
-nav a[href="#request"]:hover {
-  background: #afa28a;
-  border-color: #afa28a;
-  color: #ffffff;
-}
-
-/* --- CTAボタン復活 --- */
-.cta-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 24px;
-}
-
-.cta-row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.cta-row .btn-ghost {
-  background: #afa28a;
-  border: 1px solid #afa28a;
-  color: #ffffff;
-}
-
-.cta-row .btn-ghost:hover {
-  background: #9f927b;
-  border-color: #9f927b;
-  color: #ffffff;
-}
-
-.cta-row .btn-primary {
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-}
-
-.cta-row .btn-primary:hover {
-  background: #333333;
-  border-color: #333333;
-  color: #ffffff;
-}
-/* ご依頼ボタン */
-nav a[href="#request"] {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid #1f1f1f;
-  background: #ffffff;
-  color: #1f1f1f;
-  text-decoration: none;
-}
-
-nav a[href="#request"]:hover {
-  background: #afa28a;
-  border-color: #afa28a;
-  color: #ffffff;
-}
-/* ヒーローのCTAボタン */
-.cta-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 24px;
-}
-
-.cta-row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 1;
-}
-
-/* サービスを見る */
-.cta-row .btn-ghost {
-  background: #afa28a;
-  border: 1px solid #afa28a;
-  color: #ffffff;
-}
-
-.cta-row .btn-ghost:hover {
-  background: #9f927b;
-  border-color: #9f927b;
-  color: #ffffff;
-}
-
-/* お問い合わせ */
-.cta-row .btn-primary {
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-}
-
-.cta-row .btn-primary:hover {
-  background: #333333;
-  border-color: #333333;
-  color: #ffffff;
-}
-#contact .btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-#contact .btn-primary:hover {
-  background: #333333;
-  border-color: #333333;
-  color: #ffffff;
-}
-header nav a[href="#request"] {
-  background: #fff;
-  border: 1px solid #1f1f1f;
-  color: #1f1f1f;
-}
-
-header nav a[href="#request"]:hover {
-  background: #afa28a;
-  border-color: #afa28a;
-  color: #fff;
-}
-/* ===== ヘッダーのご依頼 ===== */
+/* ===== ご依頼ボタン ===== */
 header nav a[href="#request"] {
   display: inline-flex;
   align-items: center;
@@ -1083,15 +797,45 @@ header nav a[href="#request"]:hover {
   color: #ffffff;
 }
 
-/* ===== ヒーローの2つのボタン ===== */
-.hero .cta-row {
+/* ===== ヒーローの実績バッジ ===== */
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin-top: 14px;
+}
+
+.achievements a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 1px solid #e8ded2;
+  border-radius: 999px;
+  background: #ffffff;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+}
+
+.achievements a span {
+  all: unset;
+}
+
+.achievements strong {
+  font-weight: 700;
+}
+
+/* ===== ヒーローのボタン ===== */
+.cta-row {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 24px;
 }
 
-.hero .cta-row a {
+.cta-row a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1102,25 +846,25 @@ header nav a[href="#request"]:hover {
   line-height: 1;
 }
 
-.hero .cta-row .btn-ghost {
+.cta-row .btn-ghost {
   background: #ffffff;
   border: 1px solid #afa28a;
   color: #1f1f1f;
 }
 
-.hero .cta-row .btn-ghost:hover {
+.cta-row .btn-ghost:hover {
   background: #afa28a;
   border-color: #afa28a;
   color: #ffffff;
 }
 
-.hero .cta-row .btn-primary {
+.cta-row .btn-primary {
   background: #1f1f1f;
   border: 1px solid #1f1f1f;
   color: #ffffff;
 }
 
-.hero .cta-row .btn-primary:hover {
+.cta-row .btn-primary:hover {
   background: #333333;
   border-color: #333333;
   color: #ffffff;
@@ -1144,197 +888,4 @@ header nav a[href="#request"]:hover {
   background: #333333;
   border-color: #333333;
   color: #ffffff;
-}
-.hero .cta-row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.hero .cta-row .btn-ghost {
-  background: #ffffff;
-  border: 1px solid #afa28a;
-  color: #1f1f1f;
-}
-
-.hero .cta-row .btn-ghost:hover {
-  background: #afa28a;
-  border-color: #afa28a;
-  color: #ffffff;
-}
-
-.hero .cta-row .btn-primary {
-  background: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  color: #ffffff;
-}
-
-.hero .cta-row .btn-primary:hover {
-  background: #333333;
-  border-color: #333333;
-  color: #ffffff;
-}
-/* ===== 全体の文字をNoto Sans JPに戻す ===== */
-html,
-body,
-button,
-input,
-textarea,
-select,
-a,
-span,
-p,
-div,
-li,
-dt,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Arial, sans-serif !important;
-}
-
-/* ===== ご依頼ボタン：白地＋黒枠に戻す ===== */
-header nav a[href="#request"] {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid #1f1f1f;
-  background: #ffffff;
-  color: #1f1f1f;
-  text-decoration: none;
-}
-
-header nav a[href="#request"]:hover {
-  background: #afa28a;
-  border-color: #afa28a;
-  color: #ffffff;
-}
-
-
-/* ===== ヒーローの2ボタンだけ整える ===== */
-.hero .cta-row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.hero .cta-row .btn-ghost {
-  background: #ffffff !important;
-  border: 1px solid #afa28a !important;
-  color: #1f1f1f !important;
-}
-
-.hero .cta-row .btn-ghost:hover {
-  background: #afa28a !important;
-  border-color: #afa28a !important;
-  color: #ffffff !important;
-}
-
-.hero .cta-row .btn-primary {
-  background: #1f1f1f !important;
-  border: 1px solid #1f1f1f !important;
-  color: #ffffff !important;
-}
-
-.hero .cta-row .btn-primary:hover {
-  background: #333333 !important;
-  border-color: #333333 !important;
-  color: #ffffff !important;
-}
-
-/* ===== スマホサイズを落ち着かせる ===== */
-@media (max-width: 768px) {
-  .brand-name {
-    font-size: 1.1rem !important;
-    line-height: 1.2 !important;
-  }
-
-  .hero-content .title,
-  h1 {
-    font-size: 42px !important;
-    line-height: 1.1 !important;
-  }
-
-  .subtitle,
-  .lead,
-  p,
-  li,
-  a {
-    font-size: 1rem !important;
-  }
-}
-.hero .achievements a,
-.hero .achievements a:visited {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 18px;
-  background: #ffffff;
-  border: 1px solid #e9e4de;
-  border-radius: 999px;
-  color: #1f1f1f;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: none;
-}
-
-.hero .achievements a span {
-  all: unset;
-}
-/* PCでもヒーローの文字をゴシックに固定 */
-.hero,
-.hero * {
-  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Arial, sans-serif !important;
-}
-
-/* ヒーローの2ボタン */
-.hero .cta-row a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 14px 28px !important;
-  border-radius: 999px !important;
-  text-decoration: none !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
-}
-
-.hero .cta-row .btn-ghost {
-  background: #ffffff !important;
-  border: 1px solid #afa28a !important;
-  color: #1f1f1f !important;
-}
-
-.hero .cta-row .btn-ghost:hover {
-  background: #afa28a !important;
-  border-color: #afa28a !important;
-  color: #ffffff !important;
-}
-
-.hero .cta-row .btn-primary {
-  background: #1f1f1f !important;
-  border: 1px solid #1f1f1f !important;
-  color: #ffffff !important;
-}
-
-.hero .cta-row .btn-primary:hover {
-  background: #333333 !important;
-  border-color: #333333 !important;
-  color: #ffffff !important;
 }
