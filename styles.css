@@ -934,3 +934,37 @@ header nav a[href="#request"]{
   display:inline-block;
   width:auto;
 }
+header nav a[href="#request"]{
+  display:inline-block;
+  width:auto;
+  padding:8px 16px;
+  border-radius:999px;
+}
+@media (max-width: 768px) {
+  .global-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    align-items: center;
+  }
+
+  .global-nav li {
+    width: auto !important;
+    flex: 0 0 auto !important;
+  }
+
+  .global-nav li:last-child {
+    width: auto !important;
+    flex: 0 0 auto !important;
+    margin-top: 8px;
+  }
+
+  .global-nav a[href="#request"] {
+    display: inline-flex !important;
+    width: auto !important;
+    max-width: fit-content !important;
+    flex: 0 0 auto !important;
+    padding: 8px 16px !important;
+    white-space: nowrap !important;
+  }
+}
