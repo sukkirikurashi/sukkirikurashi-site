@@ -65,13 +65,21 @@ body {
   letter-spacing: 0.05em;
 }
 nav a[href="#request"] {
-  border: 1px solid #afa28a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 6px 12px;
   border-radius: 999px;
+  border: 1px solid #1f1f1f;
+  background: #ffffff;
+  color: #1f1f1f;
+  text-decoration: none;
 }
 
 nav a[href="#request"]:hover {
   background: #afa28a;
+  border-color: #afa28a;
+  color: #ffffff;
 }
 
 /* 目次的なスキップリンク */
@@ -909,17 +917,21 @@ body {
   background: #333333;
   border-color: #333333;
 }
-/* --- requestボタン復活 --- */
 nav a[href="#request"] {
-  border: 1px solid #afa28a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 6px 12px;
   border-radius: 999px;
-  text-decoration: none;
+  border: 1px solid #1f1f1f;
+  background: #ffffff;
   color: #1f1f1f;
+  text-decoration: none;
 }
 
 nav a[href="#request"]:hover {
   background: #afa28a;
+  border-color: #afa28a;
   color: #ffffff;
 }
 
@@ -972,18 +984,17 @@ nav a[href="#request"] {
   justify-content: center;
   padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid #afa28a;
-  background: #afa28a;
-  color: #ffffff;
+  border: 1px solid #1f1f1f;
+  background: #ffffff;
+  color: #1f1f1f;
   text-decoration: none;
 }
 
 nav a[href="#request"]:hover {
-  background: #9f927b;
-  border-color: #9f927b;
+  background: #afa28a;
+  border-color: #afa28a;
   color: #ffffff;
 }
-
 /* ヒーローのCTAボタン */
 .cta-row {
   display: flex;
@@ -1024,6 +1035,24 @@ nav a[href="#request"]:hover {
 }
 
 .cta-row .btn-primary:hover {
+  background: #333333;
+  border-color: #333333;
+  color: #ffffff;
+}
+#contact .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#contact .btn-primary:hover {
   background: #333333;
   border-color: #333333;
   color: #ffffff;
