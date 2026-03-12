@@ -1149,3 +1149,37 @@ header nav a[href="#request"]:hover {
   border-color: #333333;
   color: #ffffff;
 }
+.hero .cta-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero .cta-row .btn-ghost {
+  background: #ffffff;
+  border: 1px solid #afa28a;
+  color: #1f1f1f;
+}
+
+.hero .cta-row .btn-ghost:hover {
+  background: #afa28a;
+  border-color: #afa28a;
+  color: #ffffff;
+}
+
+.hero .cta-row .btn-primary {
+  background: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  color: #ffffff;
+}
+
+.hero .cta-row .btn-primary:hover {
+  background: #333333;
+  border-color: #333333;
+  color: #ffffff;
+}
