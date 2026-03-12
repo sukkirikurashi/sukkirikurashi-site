@@ -1057,3 +1057,31 @@ nav a[href="#request"]:hover {
   border-color: #333333;
   color: #ffffff;
 }
+.hero a {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero a:first-child {
+  background: #afa28a;
+  color: #fff;
+}
+
+.hero a:last-child {
+  background: #1f1f1f;
+  color: #fff;
+}
+header nav a[href="#request"] {
+  background: #fff;
+  border: 1px solid #1f1f1f;
+  color: #1f1f1f;
+}
+
+header nav a[href="#request"]:hover {
+  background: #afa28a;
+  border-color: #afa28a;
+  color: #fff;
+}
