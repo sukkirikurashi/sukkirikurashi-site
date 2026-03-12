@@ -714,10 +714,24 @@ header nav a[href="#request"]:hover {
   text-decoration: none;
   white-space: nowrap;
 }
+.achievements a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 1px solid #e8ded2;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1f1f1f;
+  text-decoration: none;
+  white-space: nowrap;
 
-.achievements a span {
-  all: unset;
-  display: inline;
+  transition: all 0.25s ease;
+}
+
+.achievements a:hover {
+  background: #f3ece6;
+  transform: translateY(-2px);
 }
 
 .achievements strong {
