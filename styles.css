@@ -1018,3 +1018,15 @@ header nav a[href="#request"]{
   }
 
 }
+
+@media (max-width: 768px) {
+
+  .brand-name{
+    font-size: 1.2rem;
+  }
+
+  .brand-sub{
+    font-size: 0.85rem;
+  }
+
+}
