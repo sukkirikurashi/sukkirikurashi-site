@@ -1297,3 +1297,21 @@ header nav a[href="#request"]:hover {
 .hero .achievements a span {
   all: unset;
 }
+.hero .hero-actions a{
+  display:inline-block;
+  padding:12px 26px;
+  border-radius:999px;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.hero .hero-actions a:first-child{
+  border:1px solid #afa28a;
+  color:#1f1f1f;
+  background:#fff;
+}
+
+.hero .hero-actions a:last-child{
+  background:#1f1f1f;
+  color:#fff;
+}
