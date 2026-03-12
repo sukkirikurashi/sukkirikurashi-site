@@ -968,3 +968,12 @@ header nav a[href="#request"]{
     white-space: nowrap !important;
   }
 }
+@media (max-width: 768px) {
+  header nav a[href="#request"] {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
