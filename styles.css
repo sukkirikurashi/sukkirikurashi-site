@@ -1018,7 +1018,7 @@ header nav a[href="#request"]{
   }
 
 }
-.news-list {
+..news-list {
   display: grid;
   gap: 14px;
   margin-top: 20px;
@@ -1030,6 +1030,7 @@ header nav a[href="#request"]{
   gap: 16px;
   padding: 14px 0;
   border-bottom: 1px solid #eee;
+  align-items: start;
 }
 
 .news-item time {
@@ -1042,6 +1043,8 @@ header nav a[href="#request"]{
   margin: 0;
   color: #1f1f1f;
   line-height: 1.7;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
