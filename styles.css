@@ -1045,3 +1045,13 @@ header nav a[href="#request"]{
   line-height: 1.8;
   min-width: 0;
 }
+#news .section-title {
+  margin-bottom: 28px;
+}
+
+.news-item:first-child {
+  border-top: 1px solid #eee;
+}
+.news-item:hover {
+  background: rgba(175, 162, 138, 0.03);
+}
