@@ -1018,4 +1018,35 @@ header nav a[href="#request"]{
   }
 
 }
+.news-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
 
+.news-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.news-item time {
+  color: #777;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.news-item p {
+  margin: 0;
+  color: #1f1f1f;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
