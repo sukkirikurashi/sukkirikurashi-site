@@ -1056,3 +1056,7 @@ header nav a[href="#request"]{
 .news-item:hover {
   background: rgba(175, 162, 138, 0.03);
 }
+.news-item a {
+  color: inherit;
+  text-decoration: none;
+}
