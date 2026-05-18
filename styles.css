@@ -1060,3 +1060,9 @@ header nav a[href="#request"]{
   color: inherit;
   text-decoration: none;
 }
+.price-card p,
+.price-card li {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.8;
+}
