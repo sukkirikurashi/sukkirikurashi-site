@@ -1085,7 +1085,7 @@ header nav a[href="#request"]{
 
 /* ヒーローの名前だけ調整 */
 .hero .hero-content .hero-name {
-  font-size: 38px !important;
+  font-size: 36px !important;
   font-weight: 600 !important;
   line-height: 1.2;
 }
