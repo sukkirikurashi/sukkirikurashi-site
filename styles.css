@@ -1089,3 +1089,15 @@ header nav a[href="#request"]{
   font-weight: 600 !important;
   line-height: 1.2;
 }
+
+.price-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #f7f5f1;
+  border-radius: 6px;
+  line-height: 1.8;
+}
+
+.price-note strong {
+  font-weight: 700;
+}
