@@ -4,52 +4,150 @@
    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "dateModified": "2026-0９-28T00:00:00+09:00",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "こはまゆう",
-    "alternateName": "sukkiri.kurashi",
-    "url": "https://www.sukkirikurashi.com",
-    "image": "https://www.sukkirikurashi.com/img/hero.png",
-    "description": "暮らしが整う仕組みをデザインする、収納・暮らしの専門家。滋賀を拠点に、整理収納・収納設計の視点から講演、学校出前授業、メディア出演、住宅収納設計監修など幅広く活動。",
-    "jobTitle": "収納・暮らしの専門家",
-    "knowsAbout": [
-      "整理収納",
-      "収納設計",
-      "暮らしの仕組み設計",
-      "住宅収納設計",
-      "モデルハウス収納監修",
-      "講演",
-      "学校出前授業",
-      "PTA講座",
-      "企業研修",
-      "無印良品活用",
-      "家事ラク収納"
-    ],
-    "homeLocation": {
-      "@type": "Place",
-      "name": "滋賀県"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.sukkirikurashi.com/#website",
+      "url": "https://www.sukkirikurashi.com/",
+      "name": "こはまゆう｜収納・暮らしの専門家",
+      "inLanguage": "ja"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "日本"
+    {
+      "@type": "ProfilePage",
+      "@id": "https://www.sukkirikurashi.com/#webpage",
+      "url": "https://www.sukkirikurashi.com/",
+      "name": "こはまゆう｜収納・暮らしの専門家",
+      "dateModified": "2026-10-12",
+      "isPartOf": {
+        "@id": "https://www.sukkirikurashi.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://www.sukkirikurashi.com/#person"
+      },
+      "inLanguage": "ja"
     },
-    "sameAs": [
-      "https://www.instagram.com/sukkiri.kurashi/"
-    ]
-  }
+    {
+      "@type": "Person",
+      "@id": "https://www.sukkirikurashi.com/#person",
+      "name": "こはまゆう",
+      "alternateName": "sukkiri.kurashi",
+      "url": "https://www.sukkirikurashi.com/",
+      "image": "https://www.sukkirikurashi.com/img/hero.png",
+      "jobTitle": "収納・暮らしの専門家",
+      "description": "滋賀県大津市を拠点に全国で活動する収納・暮らしの専門家。無印良品マニア歴26年、自宅で約1,000点を愛用。テレビ出演6回、雑誌・書籍掲載24冊、講演・授業35回、住宅収納設計・スタイリング監修3件（2026年10月時点）。商品紹介、店舗・自宅ロケ、専門家解説、講演、学校出前授業、住宅収納監修などに対応。",
+      "knowsAbout": [
+        "整理収納",
+        "住宅収納設計",
+        "収納スタイリング",
+        "無印良品の商品・収納活用",
+        "家事ラク",
+        "暮らしの仕組みづくり",
+        "商品紹介・比較",
+        "片づけ教育",
+        "企業・学校向け講演"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "整理収納アドバイザー1級"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "住宅収納スペシャリスト"
+        }
+      ],
+      "homeLocation": {
+        "@type": "Place",
+        "name": "滋賀県大津市"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sukkiri.kurashi/"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "テレビ・雑誌・Webメディア出演、取材、商品紹介、専門家解説、企画監修",
+            "provider": {
+              "@id": "https://www.sukkirikurashi.com/#person"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "日本"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "企業・商業施設向け整理収納・暮らしの講演、イベント登壇",
+            "provider": {
+              "@id": "https://www.sukkirikurashi.com/#person"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "日本"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "園・学校・PTA向け片づけ出前授業、親子向け講座",
+            "provider": {
+              "@id": "https://www.sukkirikurashi.com/#person"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "日本"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "住宅会社・モデルハウスの収納設計・スタイリング監修",
+            "provider": {
+              "@id": "https://www.sukkirikurashi.com/#person"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "日本"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "個人宅の整理収納並走サポート・オンライン相談",
+            "provider": {
+              "@id": "https://www.sukkirikurashi.com/#person"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "日本"
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 
     <meta property="og:title" content="こはまゆう｜収納・暮らしの専門家｜無印良品マニア">
 <meta property="og:description" content="収納・暮らしの専門家。無印良品マニア歴26年。講演・学校出前授業・住宅収納設計監修を通して、暮らしのめんどくさいをラクに変える仕組みづくりを発信しています。">
-<meta property="og:image" content="img/profile-muji.jpg">
+<meta property="og:image" content="https://www.sukkirikurashi.com/img/profile-muji.jpg">
 <meta property="og:type" content="website">
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>こはまゆう｜収納・暮らしの専門家</title>
-      <meta name="description" content="収納・暮らしの専門家 すっきり収納クリエイター｜整理収納アドバイザー・住宅収納スペシャリストとして収納設計・講演・メディア出演などを行い『暮らしをすっきり整える収納設計』を提案。無印良品歴26年以上の無印良品マニア。">
+      <title>こはまゆう｜収納・暮らしの専門家｜無印良品・メディア出演・講演・収納監修</title>
+      <meta name="description" content="こはまゆう｜収納・暮らしの専門家。無印良品マニア歴26年、自宅で約1,000点を愛用。テレビ・雑誌の商品紹介、専門家解説、店舗・自宅ロケ、企業講演、学校出前授業、住宅収納設計・スタイリング監修に対応。滋賀県大津市を拠点に全国で活動。">
       <link rel="canonical" href="https://www.sukkirikurashi.com/">
       <link rel="icon" href="/images/favicon.png" type="image/png">
       <link rel="icon" type="image/png" href="img/favicon.png">
@@ -60,7 +158,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="styles.css" />
    </head>
-   <body>
+   <body id="top">
       <a href="#top" class="skip-link" aria-label="ページの先頭へ">トップへ</a>
       <header>
   <div class="wrap header-inner">
@@ -100,7 +198,7 @@
 
       <div class="achievements">
         <a href="#media-tv"><span>テレビ出演 <strong>6回</strong></span></a>
-        <a href="#media-magazine"><span>雑誌掲・書籍<strong>24回</strong></span></a>
+        <a href="#media-magazine"><span>雑誌・書籍<strong>24冊</strong></span></a>
         <a href="#services"><span>講演・授業<strong>35回</strong></span></a>
         <a href="#services"><span>収納設計監修 <strong>3件</strong></span></a>
       </div>
@@ -217,7 +315,7 @@
       <!-- サービス-->
       <section id="services" class="section" aria-labelledby="services-title">
          <div class="wrap">
-            <h2 id="service">サービス</h2>
+            <h2 id="services-title" class="section-title">サービス</h2>
             <p>
 収納・暮らしの専門家として、教育機関・企業・住宅会社などで、講演・メディア出演・収納設計監修を行っています。
 </p>   
@@ -403,7 +501,7 @@
 
     <p>
       整理収納や暮らしの仕組みづくりを専門に、
-      テレビ・雑誌・Webメディアでの取材、出演、商品紹介・監修に対応しています。
+      テレビ・雑誌・Webメディアでの取材・出演、商品紹介・比較、専門家コメント、企画監修に対応しています。無印良品の店舗ロケ・自宅ロケの実績もあります。
     </p>
 
     <!-- テレビ -->
@@ -716,6 +814,7 @@
   ※遠方出張・宿泊が必要な場合は別途ご相談<br>
   ※内容や規模によりお見積りいたします。
 </p>
+  </div>
 </section>
 
 
@@ -747,7 +846,7 @@
     <nav class="footer-nav">
       <a href="#services">サービス</a>
       <a href="#profile">プロフィール</a>
-      <a href="#media">メディア</a>
+      <a href="#media-tv">メディア</a>
        <a href="#price">価格・ご相談</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
@@ -760,13 +859,6 @@
     </p>
 
   </div>
-</footer>
-  </div>
-</footer>
-
-  </div>
-</footer>
-</div>
 </footer>
       <script>
          // 簡易ナビのスムーススクロール
