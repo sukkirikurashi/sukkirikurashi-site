@@ -1180,3 +1180,17 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #8a6a4a; outline-off
   object-fit: cover;
   object-position: center;
 }
+/* 収納監修の画像サイズを統一 */
+#service-storage .service-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* チラシは文字や写真が切れないよう全体を表示 */
+#service-storage .service-visual img[src="img/modelhouse.png"] {
+  object-fit: contain;
+}
