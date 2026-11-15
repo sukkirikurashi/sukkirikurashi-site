@@ -300,7 +300,6 @@ color: inherit;
 		grid-template-columns: 1fr;
 	}
 }
-}
 
 .two-column {
   display: grid;
@@ -1100,4 +1099,75 @@ header nav a[href="#request"]{
 
 .price-note strong {
   font-weight: 700;
+}
+
+/* サービス・料金の構成整理（2026-11） */
+[id] { scroll-margin-top: var(--header-offset, 140px); }
+body { padding-top: var(--header-offset, 110px); }
+.section-intro { margin-bottom: 24px; line-height: 1.9; }
+.service-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 32px; }
+.service-links a { padding: 9px 16px; border: 1px solid #e6ddd3; border-radius: 999px; color: var(--fg); text-decoration: none; font-size: .9rem; }
+.service-links a:hover { background: #f7f5f1; }
+.service-stack { display: grid; gap: 28px; }
+.service-feature { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.6fr); gap: 32px; padding: 32px; border: 1px solid #e9e4de; border-radius: 12px; box-shadow: var(--shadow); align-items: start; }
+.service-visual { margin: 0; min-width: 0; }
+.service-visual img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.service-visual figcaption { font-size: .8rem; line-height: 1.6; color: var(--muted); margin-top: 8px; }
+.service-secondary-photo { margin-top: 24px; }
+.service-body { min-width: 0; }
+.service-number { margin: 0 0 6px; color: #79694e; font-size: .85rem; letter-spacing: .1em; font-weight: 600; }
+.service-body h3 { margin: 0 0 10px; font-size: 1.35rem; line-height: 1.6; }
+.service-body h4 { font-size: .95rem; margin: 20px 0 6px; }
+.service-body p { margin-top: 0; line-height: 1.9; }
+.service-body h4 + p { font-size: .95rem; }
+.service-body .service-meta { font-size: .85rem; color: #666; margin-top: 18px; }
+.service-scope { padding-left: 1.3em; font-size: .95rem; }
+.service-examples { margin: 20px 0; border-top: 1px solid #e9e4de; border-bottom: 1px solid #e9e4de; }
+.service-examples summary { padding: 12px 0; cursor: pointer; font-weight: 500; font-size: .9rem; }
+.service-examples ul { padding-left: 1.3em; font-size: .85rem; color: #555; }
+.service-examples li { margin-bottom: 7px; }
+.service-examples p { font-size: .85rem; color: #555; }
+.service-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 22px; }
+.section-button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 11px 18px; border: 1px solid #afa28a; border-radius: 999px; color: var(--fg); text-decoration: none; font-size: .9rem; font-weight: 500; line-height: 1.7; text-align: center; }
+.section-button:hover { background: #f7f5f1; }
+.section-button-primary { background: var(--fg); color: #fff; border-color: var(--fg); }
+.section-button-primary:hover { background: #444; }
+.section-text-link { color: #615039; font-size: .9rem; text-underline-offset: 4px; }
+.service-consultation { margin-top: 28px; padding: 6px 20px; background: #f7f5f1; border-radius: 8px; font-size: .95rem; }
+.service-consultation a { color: inherit; text-underline-offset: 4px; }
+.media-brief { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 24px 28px; margin: 24px 0; background: #f7f5f1; border-radius: 12px; }
+.media-brief h3 { margin: 0 0 12px; font-size: 1rem; }
+.media-brief ul { padding-left: 1.2em; margin: 0; }
+.media-brief li, .media-brief p { font-size: .95rem; line-height: 1.9; }
+.media-contact { margin-top: 28px; }
+.price-card h3 { margin: 0 0 16px; font-size: 1.15rem; }
+.price-card hr { border: 0; border-top: 1px solid #e9e4de; margin: 24px 0; }
+.individual-support { box-shadow: none; }
+.individual-support > summary { cursor: pointer; font-weight: 500; color: #555; }
+.individual-support-body { padding-top: 20px; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #8a6a4a; outline-offset: 5px; }
+@media (max-width: 860px) {
+  .service-feature { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .service-visual { max-width: 520px; width: 100%; margin: 0 auto; }
+  .service-secondary-photo { max-width: 280px; }
+  .media-brief { grid-template-columns: 1fr; gap: 24px; }
+  .two-column { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .header-inner { padding: 14px 16px; }
+  .global-nav { width: 100%; min-width: 0; }
+  .global-nav ul { flex-wrap: wrap; gap: 8px 14px; }
+  .global-nav li:last-child { margin-left: 0; margin-top: 0; }
+  .service-links a { font-size: .85rem; }
+  .service-feature { padding: 20px; }
+  .service-body h3 { font-size: 1.2rem; }
+  .media-brief { padding: 20px; }
+  #media-tv .activity-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  #media-tv .activity-item img { height: auto; }
+  .news-item { grid-template-columns: 72px minmax(0, 1fr); gap: 12px; }
+  .price-card { padding: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .activity-item, .activity-item img, .achievements a { transition: none; }
 }
