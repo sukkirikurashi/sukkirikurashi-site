@@ -1171,3 +1171,12 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #8a6a4a; outline-off
   html { scroll-behavior: auto; }
   .activity-item, .activity-item img, .achievements a { transition: none; }
 }
+/* セミナー写真3枚のサイズを統一 */
+#service-seminar .service-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
