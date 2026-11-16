@@ -1194,3 +1194,11 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #8a6a4a; outline-off
 #service-storage .service-visual img[src="img/modelhouse.png"] {
   object-fit: contain;
 }
+/* 小さい画面ではサービス写真の幅をそろえる */
+@media (max-width: 860px) {
+  .service-feature .service-visual {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
